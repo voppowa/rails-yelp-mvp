@@ -1,9 +1,9 @@
 
-<%= simple_form_for (restaurant) do |f| %>
+<%= simple_form_for [:admin, restaurant] do |f| %>
   <%= f.error_notification %>
   <%= f.input :name, input_html: {class: "input-lg"} %>
   <%= f.input :address, input_html: {class: "input-lg"} %>
   <%= f.input :phone_number %>
   <%= f.input :category %>
-   <%= f.button :submit, class: "btn btn-warning" %>
+  <%= f.button :submit, class: "btn btn-warning" %>
 <% end %>

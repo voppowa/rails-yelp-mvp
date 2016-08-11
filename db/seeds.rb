@@ -17,6 +17,18 @@ restaurants_attributes = [
     address:      "route de Suresnes 75016 Paris",
     phone_number: "214 23 55",
     category:     "french"
+  },
+  {
+    name:         "Zum Storch",
+    address:      "Am Seesteg 8008 Zürich",
+    phone_number: "041 23 55",
+    category:     "japanese"
+  },
+  {
+    name:         "Crepenese",
+    address:      "route de bibla 8008 Brussel",
+    phone_number: "237 23 31",
+    category:     "belgian"
   }
 ]
 restaurants_attributes.each { |params| Restaurant.create!(params) }
